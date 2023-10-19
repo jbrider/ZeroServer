@@ -1,0 +1,6 @@
+@ZeroServer_HostAddress = http://localhost:5271
+
+GET {{ZeroServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

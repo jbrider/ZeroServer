@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  zeroserver:
+    image: ${DOCKER_REGISTRY-}zeroserver
+    build:
+      context: .
+      dockerfile: ZeroServer/Dockerfile
+    networks:
+      - z-network
+
+networks:
+  z-network:
+    name: custom_znetwork
+    
